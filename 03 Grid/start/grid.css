@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-size: 30px;
 }
 body {
@@ -16,8 +15,8 @@ body {
     grid-template-rows: repeat(5, 1fr);
     top: 20%;
     left: 40%;
-    width: 30%;
-    height: 450px;
+    width: 40%;
+    height: 460px;
     position: absolute;
 
 }
@@ -28,12 +27,14 @@ body {
     text-align: center;
     font-weight: bold;
 }
-div .grid-item {
-    border: 2px solid rgb(96, 106, 108) ;
+.grid-item {
+    border: 2px solid rgb(96, 106, 108);
 }
 .item-zero {
     grid-column: 1/5;
     padding-top: 20px;
+    border-left: none;
+    border-right: none;
 }
 span {
     margin-left: 90%;
@@ -45,28 +46,34 @@ span {
 
 .item-plus {
    background-color: rgb(188, 180, 180);
+   border-left: none;
+   border-top: none;
 }
 .item-minus {
     background-color: rgb(188, 180, 180);
+    border-top: none;
 }
 .item-times{
     background-color: rgb(188, 180, 180);
+    border-top: none;
 
 }
 .item-divide {
     background-color: rgb(188, 180, 180);
+    border-top: none;
+    border-right: none;
 }
 
 .item-equals{
     display: grid;
+    border-right: none;
+    border-bottom: none;
     position: relative;
     grid-area: 3/4/7/5;
     background-color: #f06868;
     align-content: center;
 }
-div.item-dot{
-   padding-top: 18px;
-}
+
 
 
 

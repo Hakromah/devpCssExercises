@@ -1,0 +1,10 @@
+#yellow ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+#red ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}

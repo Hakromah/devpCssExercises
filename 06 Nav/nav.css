@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(167, 158, 158);
+}
+.nav_bar {
+    background: rgb(44, 40, 40);
+    border-bottom: 3px solid #fff;
+    padding-bottom: 18px;
+    padding-left: 10px;
+}
+a {
+    font-size: 20px;
+    color: #fff;
+}
+select {
+    margin-left: 20px;
+    font-size: 15px;
+    background-color: rgb(44, 40, 40);
+    color: rgb(181, 188, 188);
+    border: none;
+}
+.link {
+    color: rgb(181, 188, 188);
+    font-size: 15px;
+}
+button[type="button"]{
+    font-size: 15px;
+    margin-right: 3rem;
+    padding-right: 10px;
+    padding: 0 6px;
+    background-color: rgb(44, 40, 40);
+    border: none;
+    color: gray;
+}
+input[type="search"]{
+    font-size: 16px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+}
+input[type="button"]{
+    padding: 5px;
+    background-color:rgb(44, 40, 40);
+    margin-left: 3px;
+    font-size: 15px;
+    border-radius: 4px;
+    color: rgba(32, 158, 32, 0.877);
+    border-color: rgba(49, 169, 49, 0.998);
+}
+input[type="button"]:hover{
+    background: green;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.hamburger{
+    display:none;
+    cursor:pointer;
+}
+.menu{
+    display:block;
+    width:25px;
+    height:3px;
+    margin:5px;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background:white;
+    align-content: space-around;
+    
+
+}        
+
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+        margin: 10px 5px;
+    }
+    a.nav {
+        padding-left: 50px;
+        ;
+    }
+    .home,.link,select,button[type="button"],input[type="search"],input[type="button"]{
+        display: none;
+    }
+}
