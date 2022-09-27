@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 75% 25%;
+            background-color: aquamarine;
+            height: 100vh;
+        }
+        .tablet-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            background-color: gray;
+            
+        }
+        .nested-1 {
+            grid-row: 1/7;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(209, 198, 198);
+            align-items: center;
+        }
+        .circle {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background-color: blue;
+            margin-bottom: 20px;
+
+        }
+        .mr {
+           background-color: blue;
+           width: 45px;
+           height: 45px;
+           border-radius: 6px;
+           display: flex;
+           justify-content:center;
+           align-items: center;
+           margin-top: 20px;
+        }
+        .nes-cerca {
+            display: flex;
+            background-color: #fff;
+            grid-column: 2/5;
+            border-bottom: 5px solid black;
+            justify-content: flex-start;
+            align-items: center;
+    
+        }
+        .cerca {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: blueviolet;
+            height: 50px;
+            width: 200px;
+            border-radius: 5px;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        .empty {
+            grid-column: 5/7;
+            grid-row: 1/7;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: chocolate;
+
+        }
+        .rect {
+            display: flex;
+            width: 80px;
+            height: 40px;
+            align-self: ;
+            margin-left: 90px;
+            background-color: black;
+            margin-bottom: 360px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tablet-container">
+            <div class="nested-1">
+                <div class="mr">MR</div>
+                <div class="circle"></div>
+            </div>
+            <div class="nes-cerca">
+                <div class="cerca">Cerca..</div>
+            </div>
+            <div class="empty">
+                <div class="rect"></div>
+  
+            </div>
+        </div>
+
+
+        <div class="mobile-container">
+            <div class="nested-mobile">
+                <div class="mr-mobile">MR</div>
+            </div>
+            <div class="cerca-mobile">cerca..</div>
+            <div class="circle-mobile"></div>
+        </div>
+    </div>
+</body>
+</html>
